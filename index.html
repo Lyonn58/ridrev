@@ -18,9 +18,16 @@
       background-size: cover;
     "
   >
-    <audio autoplay>
-      <source src="Happy Birthday Song.mp3" type="audio/mp3" />
-    </audio>
+    <div id="audio-container">
+      <audio id="song" autoplay loop>
+        <source src="audio/Happy Birthday Song.mp3" type="audio/mp3" />
+      </audio>
+
+      <div class="audio-icon-wrapper" style="display: none">
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
+
     <div
       class="border bg-white rounded-xl px-10 border-4 border-gray-300 py-8 shadow-lg shadow-blue-300 text-center animate__animated animate__backInDown m-8 w-80"
       id="kartu"
@@ -43,7 +50,7 @@
     <script>
       let kartu = document.getElementById("kartu");
       function ubahKartu() {
-        kartu.innerHTML = `<h1 class="font-semibold text-wrap animate__animated animate__zoomIn">Selamat ulang tahun, SAYANGKU Cintaku! Semoga tahun ini makin banyak kebahagiaan, rezeki lancar, dan segala impian jadi kenyataan. Semoga kita terus bisa bareng-bareng, seru-seruan, dan saling dukung ya lopeyu! 🎉🎂<h1>
+        kartu.innerHTML = `<h1 class="font-semibold text-wrap animate__animated animate__zoomIn">Selamat ulang tahun, SAYANGKU Cintaku! Semoga tahun ini makin banyak kebahagiaan, semua yang di rencanakan salah satunya rezeki lancar tanpa hambatan, dan segala impian jadi kenyataan. Semoga kita terus bisa bareng-bareng, seru-seruan, dan saling dukung lopeyu! 🎉mendadak banget buatnya dan baru tau karena alarm yang ku tandain kadonya nyusul🎂<h1>
         <h2 class="mt-3 animate__animated animate__fadeIn">- Dari : Riduwan yang ganteng cedunia -</h2>
         <button onclick="refresh()" class="animate__animated animate__delay-1s animate__tada p-2 bg-slate-600 text-white rounded mt-5 hover:bg-slate-900 transition ease-in w-full">Tutup</button>
           `;
