@@ -53,8 +53,8 @@ body.transition {
 }
 
 .doors {
-  width: 650px;
-  height: 800px;
+  width: 550px;
+  height: 700px;
   position: relative;
   cursor: pointer;
   display: flex;
